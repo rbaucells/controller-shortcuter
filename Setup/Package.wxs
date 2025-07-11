@@ -1,0 +1,89 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Id="Ricardo.Shortcuter" Name="Controller Shortcuter" Manufacturer="Ricardo Baucells" Version="0.0.1">
+
+		<!-- Define icons globally. These refer to the .ico files in your build environment. -->
+		<Icon Id="ConfiguratorIcon" SourceFile="..\Scripts\Resources\Configurator.ico" />
+		<Icon Id="ScriptIcon" SourceFile="..\Scripts\Resources\Script.ico" />
+
+		<!--
+            MediaTemplate tells WiX how to handle the media (files) for the installer.
+            Setting EmbedCab="yes" ensures that the cabinet file containing all the application files
+            is embedded directly into the .msi, resulting in a single installer file.
+        -->
+		<MediaTemplate EmbedCab="yes" />
+
+		<StandardDirectory Id="ProgramFiles64Folder">
+			<Directory Id="Main_Folder" Name="Controller Shortcuter">
+				<Directory Id="Config_Folder" Name ="ConfigApp">
+					<File Source="..\ConfigApp\bin\x64\Release\net8.0-windows\config app.deps.json" />
+					<File Source="..\ConfigApp\bin\x64\Release\net8.0-windows\config app.dll" />
+					<!-- Added Id to config app.exe for shortcut targeting -->
+					<File Id="ConfigAppExe" Source="..\ConfigApp\bin\x64\Release\net8.0-windows\config app.exe" />
+					<File Source="..\ConfigApp\bin\x64\Release\net8.0-windows\config app.pdb" />
+					<File Source="..\ConfigApp\bin\x64\Release\net8.0-windows\config app.runtimeconfig.json" />
+				</Directory>
+				<Directory Id="Scripts_Folder" Name ="Scripts">
+					<Directory Id="Resources_Folder" Name="Resources">
+						<File Source="..\Scripts\Resources\icon.jpg"/>
+					</Directory>
+					<Directory Id="Other_Scripts_Folder" Name="Other Scripts">
+						<File Source="..\Scripts\Other Scripts\controller_remapper.pyw"/>
+						<File Source="..\Scripts\Other Scripts\close_remapper.pyw"/>
+						<File Source="..\Scripts\Other Scripts\keyboard_emulator.pyw"/>
+					</Directory>
+					<!-- Added Id to shortcut-er.pyw for shortcut targeting -->
+					<File Id="ShortcuterPyw" Source="..\Scripts\shortcut-er.pyw"/>
+					<File Source="..\Scripts\close_shortcuter.pyw"/>
+					<File Source="..\Scripts\Read_Me.txt"/>
+				</Directory>
+			</Directory>
+		</StandardDirectory>
+
+		<!-- Define the Start Menu directory and component for shortcuts -->
+		<StandardDirectory Id="ProgramMenuFolder">
+			<Directory Id="ApplicationProgramsFolder" Name="Controller Shortcuter">
+				<Component Id="ProgramMenuShortcuts" Guid="5113d618-b966-46c7-ab97-a0b44a083d84">
+					<!-- Shortcut for config app.exe -->
+					<Shortcut
+                        Id="ConfigAppShortcut"
+                        Name="Controller Shortcuter Config"
+                        Target="[#ConfigAppExe]"
+                        WorkingDirectory="Config_Folder"
+                        Description="Configure Controller Shortcuter"
+                        Icon="ConfiguratorIcon"
+                        IconIndex="0"
+                        Advertise="no"
+                    />
+					<!-- Shortcut for shortcut-er.pyw -->
+					<Shortcut
+                        Id="ShortcuterPywShortcut"
+                        Name="Controller Shortcuter"
+                        Target="[#ShortcuterPyw]"
+                        WorkingDirectory="Scripts_Folder"
+                        Description="Run Controller Shortcuter"
+                        Icon="ScriptIcon"
+                        IconIndex="0"
+                        Advertise="no"
+                    />
+					<!-- Remove the Start Menu folder on uninstall -->
+					<RemoveFolder Id="RemoveApplicationProgramsFolder" On="uninstall"/>
+					<!-- KeyPath for this component, ensures it's tracked by MSI -->
+					<RegistryValue Root="HKCU" Key="Software\Ricardo Baucells\Controller Shortcuter" Name="ProgramMenuShortcutsInstalled" Type="integer" Value="1" KeyPath="yes" />
+				</Component>
+			</Directory>
+		</StandardDirectory>
+
+		<StandardDirectory Id="LocalAppDataFolder">
+			<Directory Id="Main_Data_Folder" Name="Controller Shortcuter">
+				<Component Id="ApplicationDataComponent" Guid="1df92a6b-9721-447e-9641-8c5af543909b">
+					<File Id="ConfigFile" Source="..\Scripts\config.txt" />
+					<File Id="ScriptLogFile" Source="..\Scripts\scriptlog.txt" />
+					<File Id="ConfigLogFile" Source="..\Scripts\configapplog.txt" />
+					<File Id="EmulatorLogFile" Source="..\Scripts\kbmEmulator.txt" />
+					<RegistryValue Root="HKCU" Key="Software\Ricardo Baucells\Controller Shortcuter" Name="UserFilesInstalled" Type="integer" Value="1" KeyPath="yes" />
+					<RemoveFolder Id="RemoveMainDataFolderOnUninstall" On="uninstall" />
+				</Component>
+			</Directory>
+		</StandardDirectory>
+	</Package>
+</Wix>

@@ -1,0 +1,36 @@
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\bin\Release\net8.0-windows\config app.exe
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\bin\Release\net8.0-windows\config app.deps.json
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\bin\Release\net8.0-windows\config app.runtimeconfig.json
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\bin\Release\net8.0-windows\config app.dll
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\bin\Release\net8.0-windows\config app.pdb
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config_app.LineControl.resources
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config_app.Main_Form.resources
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config_app.Properties.Resources.resources
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.csproj.GenerateResource.cache
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.AssemblyInfoInputs.cache
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.AssemblyInfo.cs
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.dll
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\refint\config app.dll
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.pdb
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\config app.genruntimeconfig.cache
+C:\Users\Ricardo\Documents\Python Controller Shortcuter\config app\obj\Release\net8.0-windows\ref\config app.dll
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\bin\Release\net8.0-windows\config app.exe
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\bin\Release\net8.0-windows\config app.deps.json
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\bin\Release\net8.0-windows\config app.runtimeconfig.json
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\bin\Release\net8.0-windows\config app.dll
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\bin\Release\net8.0-windows\config app.pdb
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config_app.LineControl.resources
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config_app.Main_Form.resources
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config_app.Properties.Resources.resources
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.csproj.GenerateResource.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.AssemblyInfoInputs.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.AssemblyInfo.cs
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.dll
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\refint\config app.dll
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.pdb
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\config app.genruntimeconfig.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Release\net8.0-windows\ref\config app.dll

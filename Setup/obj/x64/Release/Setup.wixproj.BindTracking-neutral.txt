@@ -1,0 +1,21 @@
+BuiltPdbOutput	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.wixpdb
+BuiltTargetOutput	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.msi
+Input	..\ConfigApp\bin\x64\Release\net8.0-windows\config app.deps.json
+Input	..\ConfigApp\bin\x64\Release\net8.0-windows\config app.dll
+Input	..\ConfigApp\bin\x64\Release\net8.0-windows\config app.exe
+Input	..\ConfigApp\bin\x64\Release\net8.0-windows\config app.pdb
+Input	..\ConfigApp\bin\x64\Release\net8.0-windows\config app.runtimeconfig.json
+Input	..\Scripts\close_shortcuter.pyw
+Input	..\Scripts\config.txt
+Input	..\Scripts\configapplog.txt
+Input	..\Scripts\kbmEmulator.txt
+Input	..\Scripts\Other Scripts\close_remapper.pyw
+Input	..\Scripts\Other Scripts\controller_remapper.pyw
+Input	..\Scripts\Other Scripts\keyboard_emulator.pyw
+Input	..\Scripts\Read_Me.txt
+Input	..\Scripts\Resources\Configurator.ico
+Input	..\Scripts\Resources\icon.jpg
+Input	..\Scripts\Resources\Script.ico
+Input	..\Scripts\scriptlog.txt
+Input	..\Scripts\shortcut-er.pyw
+Intermediate	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\#cab1.cab

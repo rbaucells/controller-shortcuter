@@ -1,0 +1,6 @@
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\bin\x64\Release\Setup.msi
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\bin\x64\Release\Setup.wixpdb
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.wixproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.msi
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.wixpdb
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x64\Release\Setup.wixproj.BindTracking-neutral.txt

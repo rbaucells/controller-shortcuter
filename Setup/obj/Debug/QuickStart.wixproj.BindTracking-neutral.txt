@@ -1,0 +1,5 @@
+BuiltContentOutput	C:\src\QuickStart\obj\Debug\cab1.cab
+BuiltPdbOutput	C:\src\QuickStart\obj\Debug\QuickStart.wixpdb
+BuiltTargetOutput	C:\src\QuickStart\obj\Debug\QuickStart.msi
+Input	test.txt
+Intermediate	C:\src\QuickStart\obj\Debug\cab1.cab

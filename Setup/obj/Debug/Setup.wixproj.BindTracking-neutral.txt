@@ -1,0 +1,17 @@
+BuiltContentOutput	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\Debug\cab1.cab
+BuiltPdbOutput	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\Debug\Setup.wixpdb
+BuiltTargetOutput	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\Debug\Setup.msi
+Input	..\ConfigApp\bin\Release\net8.0-windows\config app.deps.json
+Input	..\ConfigApp\bin\Release\net8.0-windows\config app.dll
+Input	..\ConfigApp\bin\Release\net8.0-windows\config app.exe
+Input	..\ConfigApp\bin\Release\net8.0-windows\config app.pdb
+Input	..\ConfigApp\bin\Release\net8.0-windows\config app.runtimeconfig.json
+Input	..\Scripts\close_shortcuter.pyw
+Input	..\Scripts\config.txt
+Input	..\Scripts\log.txt
+Input	..\Scripts\Other Scripts\close_remapper.pyw
+Input	..\Scripts\Other Scripts\controller_remapper.pyw
+Input	..\Scripts\read_me.txt
+Input	..\Scripts\Resources\icon.jpg
+Input	..\Scripts\shortcut-er.pyw
+Intermediate	C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\Debug\cab1.cab

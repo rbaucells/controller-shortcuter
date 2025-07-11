@@ -1,0 +1,8 @@
+C:\src\QuickStart\bin\Debug\QuickStart.msi
+C:\src\QuickStart\bin\Debug\cab1.cab
+C:\src\QuickStart\bin\Debug\QuickStart.wixpdb
+C:\src\QuickStart\obj\Debug\QuickStart.wixproj.CoreCompileInputs.cache
+C:\src\QuickStart\obj\Debug\cab1.cab
+C:\src\QuickStart\obj\Debug\QuickStart.msi
+C:\src\QuickStart\obj\Debug\QuickStart.wixpdb
+C:\src\QuickStart\obj\Debug\QuickStart.wixproj.BindTracking-neutral.txt

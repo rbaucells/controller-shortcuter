@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B26032AF-4AA8-4DC8-8B09-7F1579509952}|..\\SetupProject\\SetupProject.wixproj|C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\SetupProject\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|c:\\users\\ricardo\\documents\\python controller shortcuter\\config app\\main form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|solutionrelative:main form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\main form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|solutionrelative:main form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|c:\\users\\ricardo\\documents\\python controller shortcuter\\config app\\linecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|solutionrelative:linecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\linecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3C71F85-3EE1-44A7-8194-78BDF095B942}|config app.csproj|solutionrelative:linecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.wxs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\SetupProject\\Product.wxs",
+              "RelativeDocumentMoniker": "..\\SetupProject\\Product.wxs",
+              "ToolTip": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\SetupProject\\Product.wxs",
+              "RelativeToolTip": "..\\SetupProject\\Product.wxs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "71fa8cad-8471-402b-834a-c68922df4385.000080|",
+              "WhenOpened": "2025-06-03T23:08:37.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LineControl.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\LineControl.cs",
+              "RelativeDocumentMoniker": "LineControl.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\LineControl.cs",
+              "RelativeToolTip": "LineControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:12:32.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LineControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\LineControl.cs",
+              "RelativeDocumentMoniker": "LineControl.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\LineControl.cs [Design]",
+              "RelativeToolTip": "LineControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:12:08.25Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main Form.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\Main Form.cs",
+              "RelativeDocumentMoniker": "Main Form.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\Main Form.cs",
+              "RelativeToolTip": "Main Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T21:22:10.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\Main Form.cs",
+              "RelativeDocumentMoniker": "Main Form.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Documents\\Python Controller Shortcuter\\config app\\Main Form.cs [Design]",
+              "RelativeToolTip": "Main Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T21:18:03.511Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
