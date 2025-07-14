@@ -55,7 +55,7 @@
             // 
             label3.Anchor = AnchorStyles.Bottom;
             label3.Font = new Font("Segoe UI", 14F);
-            label3.Location = new Point(460, 41);
+            label3.Location = new Point(533, 44);
             label3.Name = "label3";
             label3.Size = new Size(105, 27);
             label3.TabIndex = 9;
@@ -64,9 +64,9 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label2.Anchor = AnchorStyles.Bottom;
             label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(138, 45);
+            label2.Location = new Point(94, 45);
             label2.Name = "label2";
             label2.Size = new Size(105, 23);
             label2.TabIndex = 8;
@@ -86,20 +86,19 @@
             // 
             // Argument_Label
             // 
-            Argument_Label.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            Argument_Label.Anchor = AnchorStyles.Bottom;
             Argument_Label.Font = new Font("Segoe UI", 14F);
-            Argument_Label.Location = new Point(906, 40);
+            Argument_Label.Location = new Point(914, 46);
             Argument_Label.Name = "Argument_Label";
             Argument_Label.Size = new Size(105, 27);
             Argument_Label.TabIndex = 19;
             Argument_Label.Text = "Argument";
             Argument_Label.TextAlign = ContentAlignment.MiddleCenter;
-            Argument_Label.Click += Argument_Label_Click;
             // 
             // Find_Button
             // 
             Find_Button.Anchor = AnchorStyles.Bottom;
-            Find_Button.Location = new Point(557, 46);
+            Find_Button.Location = new Point(621, 48);
             Find_Button.Name = "Find_Button";
             Find_Button.Size = new Size(75, 23);
             Find_Button.TabIndex = 11;
@@ -109,8 +108,8 @@
             // 
             // Record_Button
             // 
-            Record_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Record_Button.Location = new Point(221, 46);
+            Record_Button.Anchor = AnchorStyles.Bottom;
+            Record_Button.Location = new Point(181, 48);
             Record_Button.Name = "Record_Button";
             Record_Button.Size = new Size(75, 23);
             Record_Button.TabIndex = 10;
@@ -121,25 +120,25 @@
             // Command_Text_Box
             // 
             Command_Text_Box.Anchor = AnchorStyles.Top;
-            Command_Text_Box.Location = new Point(400, 9);
+            Command_Text_Box.Location = new Point(468, 7);
             Command_Text_Box.Name = "Command_Text_Box";
-            Command_Text_Box.Size = new Size(430, 33);
+            Command_Text_Box.Size = new Size(372, 33);
             Command_Text_Box.TabIndex = 7;
             Command_Text_Box.Text = "";
             // 
             // Inputs_Text_Box
             // 
-            Inputs_Text_Box.Location = new Point(138, 9);
+            Inputs_Text_Box.Location = new Point(138, 7);
             Inputs_Text_Box.Name = "Inputs_Text_Box";
             Inputs_Text_Box.ReadOnly = true;
-            Inputs_Text_Box.Size = new Size(256, 33);
+            Inputs_Text_Box.Size = new Size(324, 33);
             Inputs_Text_Box.TabIndex = 6;
             Inputs_Text_Box.Text = "";
             // 
             // Clear_Inputs
             // 
-            Clear_Inputs.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Clear_Inputs.Location = new Point(302, 46);
+            Clear_Inputs.Anchor = AnchorStyles.Bottom;
+            Clear_Inputs.Location = new Point(343, 48);
             Clear_Inputs.Name = "Clear_Inputs";
             Clear_Inputs.Size = new Size(75, 23);
             Clear_Inputs.TabIndex = 12;
@@ -150,7 +149,7 @@
             // Clear_Command
             // 
             Clear_Command.Anchor = AnchorStyles.Bottom;
-            Clear_Command.Location = new Point(638, 46);
+            Clear_Command.Location = new Point(702, 47);
             Clear_Command.Name = "Clear_Command";
             Clear_Command.Size = new Size(75, 23);
             Clear_Command.TabIndex = 13;
@@ -160,7 +159,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            button1.Anchor = AnchorStyles.Left;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.Location = new Point(34, 46);
             button1.Name = "button1";
@@ -171,8 +170,8 @@
             // 
             // Stop_Button
             // 
-            Stop_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Stop_Button.Location = new Point(221, 46);
+            Stop_Button.Anchor = AnchorStyles.Bottom;
+            Stop_Button.Location = new Point(262, 48);
             Stop_Button.Name = "Stop_Button";
             Stop_Button.Size = new Size(75, 23);
             Stop_Button.TabIndex = 15;
@@ -183,7 +182,7 @@
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            button2.Anchor = AnchorStyles.Left;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.Location = new Point(64, 44);
             button2.Name = "button2";
@@ -195,16 +194,16 @@
             // Arguments_Text_Box
             // 
             Arguments_Text_Box.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Arguments_Text_Box.Location = new Point(836, 9);
+            Arguments_Text_Box.Location = new Point(846, 7);
             Arguments_Text_Box.Name = "Arguments_Text_Box";
-            Arguments_Text_Box.Size = new Size(388, 33);
+            Arguments_Text_Box.Size = new Size(378, 33);
             Arguments_Text_Box.TabIndex = 17;
             Arguments_Text_Box.Text = "";
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button3.Location = new Point(1098, 45);
+            button3.Anchor = AnchorStyles.Bottom;
+            button3.Location = new Point(1106, 49);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 18;
@@ -214,8 +213,8 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button4.Location = new Point(1017, 45);
+            button4.Anchor = AnchorStyles.Bottom;
+            button4.Location = new Point(1025, 48);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 20;

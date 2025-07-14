@@ -7,10 +7,15 @@ import threading
 import time
 
 class LineInfo:
-    def __init__(self, tokens: list[int], command: str, argument : str):
+    def __init__(self, tokens: list[int], command1: str, argument1 : str, command2: str, argument2 : str):
         self.tokens = tokens
-        self.command = command
-        self.argument = argument
+        self.command1 = command1
+        self.argument1 = argument1
+
+        self.command2 = command2
+        self.argument2 = argument2
+
+        self.state = False
 
 localAppDataPath = os.environ.get("LOCALAPPDATA")
 curWorkingDir = os.getcwd()
@@ -18,10 +23,10 @@ programFilesPath = os.environ.get("ProgramFiles")
 log_file = os.path.join(localAppDataPath,"Controller Shortcuter", "scriptlog.txt")
 
 logging.basicConfig(
-    filename=log_file,
+    # filename=log_file,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filemode='a'
+    # filemode='a'
 )
 
 logger = logging.getLogger(__name__)
@@ -222,53 +227,69 @@ def parse_line_for_info(line: str) -> LineInfo:
 
     startInput = line.find('("') + 2
     endInput = line.find('")')
-    if (endInput > startInput and startInput != -1 and endInput != -1):
-        tokens = [item.strip() for item in line[startInput:endInput].split(',')]
+    tokens = [item.strip() for item in line[startInput:endInput].split(',')]
 
-        tokenList : list[int] = [0] * len(state)
+    tokenList : list[int] = [0] * len(state)
 
-        for token in tokens:
-            if token == "a":
-                tokenList[a] = 1
-            elif token == "b":
-                tokenList[b] = 1
-            elif token == "x":
-                tokenList[x] = 1
-            elif token == "y":
-                tokenList[y] = 1
-            elif token == "up":
-                tokenList[up] = 1
-            elif token == "down":
-                tokenList[down] = 1
-            elif token == "left":
-                tokenList[left] = 1
-            elif token == "right":
-                tokenList[right] = 1
-            elif token == "leftshoulder":
-                tokenList[leftshoulder] = 1
-            elif token == "rightshoulder":
-                tokenList[rightshoulder] = 1
-            elif token == "start":
-                tokenList[start] = 1
-            elif token == "back":
-                tokenList[back] = 1
-            elif token == "leftStick":
-                tokenList[leftStick] = 1
-            elif token == "rightStick":
-                tokenList[rightStick] = 1
+    for token in tokens:
+        if token == "a":
+            tokenList[a] = 1
+        elif token == "b":
+            tokenList[b] = 1
+        elif token == "x":
+            tokenList[x] = 1
+        elif token == "y":
+            tokenList[y] = 1
+        elif token == "up":
+            tokenList[up] = 1
+        elif token == "down":
+            tokenList[down] = 1
+        elif token == "left":
+            tokenList[left] = 1
+        elif token == "right":
+            tokenList[right] = 1
+        elif token == "leftshoulder":
+            tokenList[leftshoulder] = 1
+        elif token == "rightshoulder":
+            tokenList[rightshoulder] = 1
+        elif token == "start":
+            tokenList[start] = 1
+        elif token == "back":
+            tokenList[back] = 1
+        elif token == "leftStick":
+            tokenList[leftStick] = 1
+        elif token == "rightStick":
+            tokenList[rightStick] = 1
 
-        startCommand = line.find('{"') + 2
-        endCommand = line.find('"}')
-        
-        command = line[startCommand:endCommand].strip()
+    startCommand1 = line.find('{"') + 2
+    endCommand1 = line.find('"}')
+    
+    command1 = line[startCommand1:endCommand1].strip()
 
-        startArgument = line.find('["') + 2
-        endArgument = line.find('"]')
+    startArgument1 = line.find('["') + 2
+    endArgument1 = line.find('"]')
 
-        argument = line[startArgument:endArgument].strip()
+    argument1 = line[startArgument1:endArgument1].strip()
 
-        return LineInfo(tokenList, command, argument)
-    return None
+    lineWithout1 = line[endArgument1 + 2:len(line)].strip()
+
+    startCommand2 = lineWithout1.find('{"') + 2
+    endCommand2 = lineWithout1.find('"}')
+    
+    command2 = ""
+
+    if (startCommand2 != -1 and endCommand2 > startCommand2 and endCommand2 != -1):
+        command2 = lineWithout1[startCommand2:endCommand2].strip()
+
+    startArgument2 = lineWithout1.find('["') + 2
+    endArgument2 = lineWithout1.find('"]')
+
+    argument2 = ""
+
+    if (startArgument2 != -1 and endArgument2 > startArgument2 and endArgument2 != -1):
+        argument2 = lineWithout1[startArgument2:endArgument2].strip()
+
+    return LineInfo(tokenList, command1, argument1, command2, argument2)
 
 def rumble(left, right, duration):
     global controllers
@@ -295,7 +316,15 @@ def process_input():
     for line in lines:
         if state == line.tokens:
             threading.Thread(target=rumble, args=(1, 1, 0.15), daemon=True).start()
-            execute_command(line.command, line.argument)
+            if (line.command2 != ""):
+                if (line.state):
+                    execute_command(line.command2, line.argument2)
+                    line.state = False
+                else:
+                    execute_command(line.command1, line.argument1)
+                    line.state = True
+            else:
+                execute_command(line.command1, line.argument1)
             break
 
 lines = parse_file_for_lines(os.path.join(localAppDataPath, "Controller Shortcuter", "config.txt"))

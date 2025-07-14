@@ -21,6 +21,7 @@ namespace config_app
         // names for getting a reference
         const string shortcutTextBoxName = "Shortcut_Text";
         const string inputsTextBoxName = "Inputs_Text_Box";
+        const string toggleableTextBoxName = "ToggleAbleCheckBox";
         // list of inputs pressed
         IList<string> controllerInputsList = new List<string>();
         // xbox controller
@@ -29,6 +30,7 @@ namespace config_app
         bool recordingInput;
         // reference to mainForm this control is on
         Main_Form mainForm;
+        int shortcutNumber;
 
         public LineControl(List<string> inputs, string command, int shortcutNumber, string argument)
         {
@@ -36,6 +38,7 @@ namespace config_app
             SetInputs(inputs);
             SetCommand(command);
             SetNumber(shortcutNumber);
+            shortcutNumber = shortcutNumber;
             SetArgument(argument);
         }
 
@@ -52,6 +55,8 @@ namespace config_app
                 }
             }
         }
+
+      
 
         public void SetInputs(List<string> inputs)
         {
@@ -309,11 +314,6 @@ namespace config_app
         public string GetArgument()
         {
             return Arguments_Text_Box.Text;
-        }
-
-        private void Argument_Label_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -130,7 +130,7 @@ namespace config_app
                 int startArgument = line.IndexOf("[\"") + 2;
                 int endArgument = line.IndexOf("\"]");
 
-                if (endInputs > startInputs && startInputs != -1 && endInputs != -1 && endCommand > startCommand && startCommand != -1 && endCommand != -1 && endArgument > startArgument && startArgument != -1 && endArgument != -1)
+                if (endInputs > startInputs && startInputs != -1 && endInputs != -1 && endCommand > startCommand && startCommand != -1 && endCommand != -1 && endArgument > startArgument - 2 && startArgument != -1 && endArgument != -1)
                 {
                     string[] inputs = line.Substring(startInputs, endInputs - startInputs).Split(",");
 
@@ -141,11 +141,33 @@ namespace config_app
 
                     string command = line.Substring(startCommand, endCommand - startCommand).Trim();
 
-                    WriteToLog("Read Line: " + line + " and extracted inputs: " + inputs + " and command: " + command);
-
                     string argument = line.Substring(startArgument, endArgument - startArgument).Trim();
 
-                    lineInfos.Add(new LineInfo(inputs.ToList(), command, argument));
+                    string lineWithout1 = line.Substring(endArgument + 2);
+
+                    int startCommand2 = lineWithout1.IndexOf("{\"") + 2;
+                    int endCommand2 = lineWithout1.IndexOf("\"}");
+
+                    int startArgument2 = lineWithout1.IndexOf("[\"") + 2;
+                    int endArgument2 = lineWithout1.IndexOf("\"]");
+
+                    if (startArgument2 - 2 < endArgument2 && startCommand2 < endCommand2 && startArgument2 != -1 && endArgument2 != -1 && startCommand2 != -1 && endCommand2 != -1)
+                    {
+                        string command2 = lineWithout1.Substring(startCommand2, endCommand2 - startCommand2);
+                        string argument2 = lineWithout1.Substring(startArgument2, endArgument2 - startArgument2);
+
+
+                        WriteToLog("Read Line: " + line + " and extracted inputs: " + inputs + " and commands: " + command + " and " + command2 + "and arguments: " + argument + " and " + argument2);
+
+                        lineInfos.Add(new LineInfo(inputs.ToList(), command, argument));
+                        lineInfos.Add(new LineInfo(inputs.ToList(), command2, argument2));
+                    }
+                    else
+                    {
+                        WriteToLog("Read Line: " + line + " and extracted inputs: " + inputs + " and command: " + command + "and arguments: " + argument);
+
+                        lineInfos.Add(new LineInfo(inputs.ToList(), command, argument));
+                    }
                 }
             }
         }
@@ -154,15 +176,36 @@ namespace config_app
         void On_Save_Button(object sender, EventArgs e)
         {
             AllLineControlsStopRecording();
-            // lines of the file
-            List<string> lines = new List<string>();
-            // get all the LineControls and get their data and add it to lines
+
+            Dictionary<string, List<LineControl>> groupedLineControls = new Dictionary<string, List<LineControl>>();
+
             foreach (LineControl lineControl in lineControls)
             {
-                lines.Add("(\"" + lineControl.GetInputs() + "\")" + " " + "{\"" + lineControl.GetCommand() + "\"}" + "" + "[\"" + lineControl.GetArgument() + "\"]");
+                string inputs = lineControl.GetInputs();
+                if (!groupedLineControls.ContainsKey(inputs))
+                {
+                    groupedLineControls.Add(inputs, new List<LineControl>());
+                }
+                groupedLineControls[inputs].Add(lineControl);
             }
+
+            List<string> lines = new List<string>();
+
+            foreach (var entry in groupedLineControls)
+            {
+                string inputs = entry.Key;
+                List<LineControl> controlsWithSameInputs = entry.Value;
+
+                string lineContent = "(\"" + inputs + "\")";
+
+                foreach (LineControl lineControl in controlsWithSameInputs)
+                {
+                    lineContent += " {\"" + lineControl.GetCommand() + "\"}" + "[\"" + lineControl.GetArgument() + "\"]";
+                }
+                lines.Add(lineContent);
+            }
+
             WriteToLog("Saving info to " + scriptConfigDir);
-            // write to file
             File.WriteAllLines(scriptConfigDir, lines);
         }
         void On_Cancel_Button(object sender, EventArgs e)

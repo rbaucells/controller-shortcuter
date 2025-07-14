@@ -14,10 +14,19 @@ If you are having issues closing any of the scripts or the config app, let me kn
 Internally the main script works with an event driven system, when you press a button on your controller it records it in an array[] of 1 and 0 and checks the config.txt data to see if we are ready to do a shortcut.
 if we are, it will launch the executable with whatever arguments passed to it. The example format for the config.txt is shown below
 
-	("right, x, y") "C:\Program Files\Controller Shortcuter\Scripts\Other Scripts\controller_remapper.pyw" "argument"
+	("left, a, x") {"C:\Program Files\Controller Shortcuter\Scripts\Other Scripts\keyboard_emulator.pyw"}[""alt, f4""]
 		^				^								   ^
 		|				|								   |
 	These are the inputs		This is the command						These are the arguments
+
+I also added a new shortcut type called Toggleable which basically means, internally it has a on/off function so if its on it runs the off function, if its off, it runs the on function
+you can define these in the config app simply by adding two functions with the same input, it will save the first command and argument as command1 and argument1 (turn on)
+and it will save the second instance as command2 and argument2 (turn off)
+
+	("down") {"C:\Program Files\Controller Shortcuter\Scripts\Other Scripts\controller_remapper.pyw"}[""] {"C:\Program Files\Controller Shortcuter\Scripts\Other Scripts\close_remapper.pyw"}[""]
+		^				^							   ^			   ^								   ^
+		|				|							   |			   |								   |
+	These are the inputs		This is the command1					These are the arguments1  This is the command2						These are the arguments2
 
 There is not set limit for the amount of shortcuts, but the config app might not go that far down.
 
