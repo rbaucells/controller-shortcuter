@@ -51,3 +51,4 @@ C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Debug\net8.0-windo
 C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Debug\net8.0-windows\config app.pdb
 C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Debug\net8.0-windows\config app.genruntimeconfig.cache
 C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Debug\net8.0-windows\ref\config app.dll
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\ConfigApp\obj\Debug\net8.0-windows\config app.sourcelink.json

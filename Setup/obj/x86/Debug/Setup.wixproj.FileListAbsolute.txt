@@ -1,1 +1,4 @@
 C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x86\Debug\Setup.wixproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x86\Debug\Setup.msi
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x86\Debug\Setup.wixpdb
+C:\Users\Ricardo\Documents\Projects\Shortcut-er\Setup\obj\x86\Debug\Setup.wixproj.BindTracking-neutral.txt

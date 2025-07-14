@@ -64,9 +64,9 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom;
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(94, 45);
+            label2.Location = new Point(154, 48);
             label2.Name = "label2";
             label2.Size = new Size(105, 23);
             label2.TabIndex = 8;
@@ -86,7 +86,7 @@
             // 
             // Argument_Label
             // 
-            Argument_Label.Anchor = AnchorStyles.Bottom;
+            Argument_Label.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Argument_Label.Font = new Font("Segoe UI", 14F);
             Argument_Label.Location = new Point(914, 46);
             Argument_Label.Name = "Argument_Label";
@@ -98,7 +98,7 @@
             // Find_Button
             // 
             Find_Button.Anchor = AnchorStyles.Bottom;
-            Find_Button.Location = new Point(621, 48);
+            Find_Button.Location = new Point(621, 47);
             Find_Button.Name = "Find_Button";
             Find_Button.Size = new Size(75, 23);
             Find_Button.TabIndex = 11;
@@ -109,7 +109,7 @@
             // Record_Button
             // 
             Record_Button.Anchor = AnchorStyles.Bottom;
-            Record_Button.Location = new Point(181, 48);
+            Record_Button.Location = new Point(246, 50);
             Record_Button.Name = "Record_Button";
             Record_Button.Size = new Size(75, 23);
             Record_Button.TabIndex = 10;
@@ -137,8 +137,8 @@
             // 
             // Clear_Inputs
             // 
-            Clear_Inputs.Anchor = AnchorStyles.Bottom;
-            Clear_Inputs.Location = new Point(343, 48);
+            Clear_Inputs.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            Clear_Inputs.Location = new Point(327, 49);
             Clear_Inputs.Name = "Clear_Inputs";
             Clear_Inputs.Size = new Size(75, 23);
             Clear_Inputs.TabIndex = 12;
@@ -170,8 +170,8 @@
             // 
             // Stop_Button
             // 
-            Stop_Button.Anchor = AnchorStyles.Bottom;
-            Stop_Button.Location = new Point(262, 48);
+            Stop_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            Stop_Button.Location = new Point(246, 50);
             Stop_Button.Name = "Stop_Button";
             Stop_Button.Size = new Size(75, 23);
             Stop_Button.TabIndex = 15;
@@ -202,8 +202,8 @@
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Bottom;
-            button3.Location = new Point(1106, 49);
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button3.Location = new Point(1106, 48);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 18;
@@ -213,7 +213,7 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Bottom;
+            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4.Location = new Point(1025, 48);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
