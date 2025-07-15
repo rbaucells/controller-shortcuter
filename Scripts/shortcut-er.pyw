@@ -256,9 +256,9 @@ def parse_line_for_info(line: str) -> LineInfo:
             tokenList[start] = 1
         elif token == "back":
             tokenList[back] = 1
-        elif token == "leftStick":
+        elif token == "leftstick":
             tokenList[leftStick] = 1
-        elif token == "rightStick":
+        elif token == "rightstick":
             tokenList[rightStick] = 1
 
     startCommand1 = line.find('{"') + 2
